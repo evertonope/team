@@ -15,7 +15,7 @@ class Pessoa
      */
     protected $idPessoa = null;
 	
-	/**
+    /**
      * @Column(name="id_empresa", type="integer")
      */
     protected $idEmpresa = null;
@@ -56,6 +56,28 @@ class Pessoa
     public function getIdPessoa()
     {
         return $this->idPessoa;
+    }
+
+    /**
+     * Set idEmpresa
+     *
+     * @param integer $idEmpresa
+     * @return Pessoa
+     */
+    public function setIdEmpresa($idEmpresa)
+    {
+        $this->idEmpresa = $idEmpresa;
+        return $this;
+    }
+    
+    /**
+     * Get idEmpresa
+     *
+     * @return string 
+     */
+    public function getIdEmpresa()
+    {
+        return $this->idEmpresa;
     }
 
     /**
