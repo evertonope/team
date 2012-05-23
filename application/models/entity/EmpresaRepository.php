@@ -16,6 +16,11 @@ class EmpresaRepository extends EntityRepository
         
     }
     
+    public function findEmpresaByName($name)
+    {
+        //função para buscar empresa pelo nome
+    }
+    
     public function findAllPedidos(){
         $query = $this->getEntityManager()
         ->createQuery('
