@@ -14,6 +14,11 @@ class Pessoa
      * @Column(name="id_pessoa", type="string")
      */
     protected $idPessoa = null;
+	
+	/**
+     * @Column(name="id_empresa", type="integer")
+     */
+    protected $idEmpresa = null;
 
     /**
      * @var     string
