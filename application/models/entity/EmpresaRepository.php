@@ -12,6 +12,10 @@ use Doctrine\ORM\EntityRepository;
  */
 class EmpresaRepository extends EntityRepository
 {
+    public function getPessoas(){
+        
+    }
+    
     public function findAllPedidos(){
         $query = $this->getEntityManager()
         ->createQuery('
